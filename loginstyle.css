@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg);
+    background-size: 100%;
+}
+.logo{
+    position: fixed;
+    height: auto;
+    left: 0px;
+    width: 250px;
+    top: 10px;
+}
+.right_links{
+    position: fixed;
+    height: auto;
+    right: 0px;
+    width: 250px;
+    top: 10px;
+}
+ 
+.box{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    width: 450px;
+    height: auto;
+    left: 0px;
+    top: 10px;
+    margin: 10px;
+
+}
+.login_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: rgba(0,0, 0,0.5);
+    border-radius: 20px;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+.login_header{
+    text-align: center;
+    margin: 20px;
+}
+.login_header header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.input_box .input-filed{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+::placeholder{
+    font-weight: 500;
+    color: black;
+}
+.input-filed:focus{
+    width: 105%;
+    height: 70px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.input_sub{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;    
+    position: relative;
+}
+.sub{
+width: 60%;
+height: 35px;
+background-color: lightblue  ;
+border-radius: 30px;
+border: none;
+cursor: pointer;
+transition: .3s;
+}
+.input_sub label{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-weight: 600;
+}
+.sub:hover{
+    background-color: lightskyblue;
+    transform: scale(1.05,1);
+}
+.signup_link{
+    text-align: center;
+    margin-top: 15px;
+    color: purple;
+}
+.signup_link a{
+    color: purple;
+    font-weight: 600;
+}
+
+@media only screen and  (max-width:840px){
+    .main_box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+ 
